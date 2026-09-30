@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#F5EFE6"/>
+  <circle cx="890" cy="190" r="170" fill="#D9E3D0" opacity=".75"/>
+  <circle cx="160" cy="1180" r="220" fill="#E6B18B" opacity=".42"/>
+  <path d="M120 900 C220 820 320 820 390 900" fill="none" stroke="#17324D" stroke-width="8" opacity=".2"/>
+  <rect x="110" y="120" width="96" height="12" rx="6" fill="#D47D5A"/>
+  <text x="110" y="220" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="34" font-weight="700">MIDDLE-AGE WELLNESS</text>
+  <text x="110" y="390" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="70" font-weight="800">50대가 되면</text>
+  <text x="110" y="490" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="70" font-weight="800">예전처럼 먹고</text>
+  <text x="110" y="590" fill="#D47D5A" font-family="Pretendard, Arial, sans-serif" font-size="70" font-weight="800">움직여도</text>
+  <text x="110" y="690" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="70" font-weight="800">살이 안 빠질 수</text>
+  <text x="110" y="790" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="70" font-weight="800">있습니다.</text>
+  <text x="110" y="1010" fill="#35546D" font-family="Pretendard, Arial, sans-serif" font-size="38">의지가 약해서가 아니라</text>
+  <text x="110" y="1070" fill="#35546D" font-family="Pretendard, Arial, sans-serif" font-size="38">몸과 생활이 달라졌기 때문일 수 있어요.</text>
+  <text x="110" y="1240" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="30" font-weight="700">01 / 05</text>
+</svg>

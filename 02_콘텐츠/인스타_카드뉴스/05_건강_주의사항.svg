@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#F5EFE6"/>
+  <rect x="110" y="130" width="860" height="860" rx="36" fill="#FFFDF8" stroke="#D47D5A" stroke-width="6"/>
+  <path d="M540 250 L680 500 L400 500 Z" fill="#D47D5A"/>
+  <text x="540" y="430" text-anchor="middle" fill="#FFFDF8" font-family="Arial, sans-serif" font-size="120" font-weight="800">!</text>
+  <text x="170" y="640" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="56" font-weight="800">당뇨·고지혈증이 있다면</text>
+  <text x="170" y="730" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="52" font-weight="800">식단이나 약을</text>
+  <text x="170" y="810" fill="#D47D5A" font-family="Pretendard, Arial, sans-serif" font-size="60" font-weight="800">임의로 바꾸지 마세요.</text>
+  <text x="170" y="900" fill="#35546D" font-family="Pretendard, Arial, sans-serif" font-size="35">건강 상태와 치료 계획은</text>
+  <text x="170" y="950" fill="#35546D" font-family="Pretendard, Arial, sans-serif" font-size="35">담당 의료진과 상의해야 합니다.</text>
+  <text x="110" y="1100" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="50" font-weight="800">오늘, 체중보다 먼저</text>
+  <text x="110" y="1175" fill="#D47D5A" font-family="Pretendard, Arial, sans-serif" font-size="50" font-weight="800">기록할 몸의 변화는 무엇인가요?</text>
+  <text x="110" y="1240" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="30" font-weight="700">05 / 05</text>
+</svg>

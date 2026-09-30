@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#F7E8DE"/>
+  <path d="M120 1000 C280 880 430 920 560 760 C680 610 790 650 960 460" fill="none" stroke="#D47D5A" stroke-width="12"/>
+  <circle cx="120" cy="1000" r="18" fill="#17324D"/><circle cx="560" cy="760" r="18" fill="#17324D"/><circle cx="960" cy="460" r="18" fill="#17324D"/>
+  <text x="110" y="180" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="34" font-weight="700">ONE CASE, NOT A PROMISE</text>
+  <text x="110" y="360" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="68" font-weight="800">한 사례에서는</text>
+  <text x="110" y="470" fill="#D47D5A" font-family="Pretendard, Arial, sans-serif" font-size="92" font-weight="800">약 6개월</text>
+  <text x="110" y="570" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="68" font-weight="800">동안 10kg이</text>
+  <text x="110" y="670" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="68" font-weight="800">줄었다고 기록됐습니다.</text>
+  <rect x="110" y="1070" width="860" height="130" rx="20" fill="#FFFDF8" opacity=".85"/>
+  <text x="145" y="1130" fill="#35546D" font-family="Pretendard, Arial, sans-serif" font-size="34">하지만 같은 숫자와 기간이</text>
+  <text x="145" y="1180" fill="#35546D" font-family="Pretendard, Arial, sans-serif" font-size="34">모두에게 적용되는 기준은 아닙니다.</text>
+  <text x="110" y="1240" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="30" font-weight="700">03 / 05</text>
+</svg>

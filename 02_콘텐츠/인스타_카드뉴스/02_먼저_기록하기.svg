@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#EEF3EA"/>
+  <rect x="110" y="130" width="860" height="970" rx="34" fill="#FFFDF8" stroke="#17324D" stroke-width="5"/>
+  <rect x="110" y="130" width="860" height="150" rx="34" fill="#17324D"/>
+  <circle cx="180" cy="205" r="18" fill="#E6B18B"/><circle cx="240" cy="205" r="18" fill="#D9E3D0"/>
+  <text x="310" y="220" fill="#FFFDF8" font-family="Pretendard, Arial, sans-serif" font-size="40" font-weight="700">먼저 기록해보세요</text>
+  <text x="170" y="430" fill="#D47D5A" font-family="Pretendard, Arial, sans-serif" font-size="56" font-weight="800">체중 숫자만</text>
+  <text x="170" y="510" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="56" font-weight="800">서둘러 바꾸기보다</text>
+  <line x1="170" y1="590" x2="900" y2="590" stroke="#D9E3D0" stroke-width="5"/>
+  <text x="190" y="700" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="42">□ 언제 과식하는지</text>
+  <text x="190" y="790" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="42">□ 스트레스와 식사가 연결되는지</text>
+  <text x="190" y="880" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="42">□ 아침 컨디션은 어떤지</text>
+  <text x="190" y="970" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="42">□ 부종과 피로감이 줄어드는지</text>
+  <text x="110" y="1240" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="30" font-weight="700">02 / 05</text>
+</svg>

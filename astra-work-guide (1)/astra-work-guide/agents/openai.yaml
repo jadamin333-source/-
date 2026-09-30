@@ -1,0 +1,13 @@
+interface:
+  display_name: Astra 작업 가이드
+  short_description: 공식 가이드를 바탕으로 Astra의 작업 진행과 결과 검토를 조정합니다
+  default_prompt: $astra-work-guide를 적용해 첨부 자료와 요청에 맞는 결과물을 완성해줘.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="40~50대 여성의 몸 변화에 맞춰 먹는 것부터 생활습관까지 함께 정리하는 건강관리"
+    />
+    <title>내 몸에 맞는 건강관리</title>
+    <style>
+      :root {
+        --ink: #102f35;
+        --ink-soft: #32545a;
+        --paper: #f7fbfb;
+        --white: #ffffff;
+        --line: #d6e4e4;
+        --mint: #7be0c8;
+        --mint-deep: #009b7d;
+        --coral: #f06f5b;
+        --sun: #f8c856;
+        --shadow: 0 18px 45px rgba(16, 47, 53, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+        word-break: keep-all;
+      }
+
+      button,
+      summary {
+        font: inherit;
+      }
+
+      .page {
+        overflow: hidden;
+      }
+
+      .wrap {
+        width: min(100% - 40px, 1120px);
+        margin: 0 auto;
+      }
+
+      .site-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 82px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--ink);
+        font-size: 0.95rem;
+        font-weight: 800;
+        letter-spacing: -0.04em;
+      }
+
+      .brand-mark {
+        display: grid;
+        width: 28px;
+        height: 28px;
+        place-items: center;
+        border-radius: 50% 50% 50% 9px;
+        background: var(--coral);
+        color: var(--white);
+        font-size: 1rem;
+        transform: rotate(-18deg);
+      }
+
+      .hero {
+        position: relative;
+        padding: 6px 0 72px;
+      }
+
+      .hero-grid {
+        position: relative;
+        display: grid;
+        gap: 24px;
+        isolation: isolate;
+      }
+
+      .hero-copy {
+        position: relative;
+        padding: 34px 26px 30px;
+        overflow: hidden;
+        border-radius: 26px;
+        background: var(--ink);
+        color: var(--white);
+        box-shadow: var(--shadow);
+      }
+
+      .hero-copy::before,
+      .hero-copy::after {
+        position: absolute;
+        z-index: -1;
+        width: 280px;
+        height: 280px;
+        border: 1px solid rgba(123, 224, 200, 0.45);
+        border-radius: 50%;
+        content: "";
+      }
+
+      .hero-copy::before {
+        right: -160px;
+        bottom: -130px;
+      }
+
+      .hero-copy::after {
+        right: -125px;
+        bottom: -96px;
+        width: 210px;
+        height: 210px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 15px;
+        color: var(--mint);
+        font-size: 0.8rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+      }
+
+      .eyebrow::before {
+        width: 22px;
+        height: 2px;
+        background: currentColor;
+        content: "";
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        max-width: 790px;
+        margin-bottom: 22px;
+        font-size: clamp(2.2rem, 7vw, 4.65rem);
+        font-weight: 800;
+        letter-spacing: -0.075em;
+        line-height: 1.15;
+      }
+
+      .hero-copy h1 strong {
+        color: var(--mint);
+        font-weight: inherit;
+      }
+
+      .hero-intro {
+        max-width: 570px;
+        margin-bottom: 0;
+        color: rgba(255, 255, 255, 0.78);
+        font-size: 1.04rem;
+      }
+
+      .hero-note {
+        display: grid;
+        gap: 12px;
+        padding: 24px;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: var(--white);
+      }
+
+      .hero-note .mini-label,
+      .section-kicker {
+        margin: 0;
+        color: var(--mint-deep);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+      }
+
+      .hero-note p:last-child {
+        margin-bottom: 0;
+        font-size: 1.08rem;
+        font-weight: 700;
+        letter-spacing: -0.04em;
+        line-height: 1.45;
+      }
+
+      .signal-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+        margin: 24px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .signal-list li {
+        padding: 8px 11px;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: 999px;
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 0.86rem;
+      }
+
+      .for-you {
+        padding: 72px 0;
+        background: var(--white);
+      }
+
+      .section-heading {
+        display: grid;
+        gap: 10px;
+        margin-bottom: 30px;
+      }
+
+      .section-heading h2 {
+        margin-bottom: 0;
+        font-size: clamp(1.85rem, 5vw, 3rem);
+        font-weight: 800;
+        letter-spacing: -0.065em;
+        line-height: 1.2;
+      }
+
+      .section-heading p:last-child {
+        max-width: 550px;
+        margin-bottom: 0;
+        color: var(--ink-soft);
+      }
+
+      .person-card {
+        position: relative;
+        display: grid;
+        gap: 18px;
+        padding: 28px 23px;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        background: #ecf8f5;
+      }
+
+      .person-card::after {
+        position: absolute;
+        right: -16px;
+        bottom: -45px;
+        color: rgba(0, 155, 125, 0.11);
+        font-size: 11rem;
+        font-weight: 900;
+        letter-spacing: -0.12em;
+        line-height: 1;
+        content: "52";
+      }
+
+      .person-card > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .person-card > p {
+        max-width: 640px;
+        margin-bottom: 0;
+        font-size: 1.12rem;
+        font-weight: 700;
+        letter-spacing: -0.04em;
+        line-height: 1.55;
+      }
+
+      .check-list {
+        display: grid;
+        gap: 13px;
+        margin: 2px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .check-list li {
+        display: flex;
+        gap: 11px;
+        align-items: flex-start;
+      }
+
+      .check-list li::before {
+        display: grid;
+        flex: 0 0 auto;
+        width: 22px;
+        height: 22px;
+        margin-top: 2px;
+        place-items: center;
+        border-radius: 50%;
+        background: var(--mint-deep);
+        color: var(--white);
+        font-size: 0.78rem;
+        font-weight: 900;
+        content: "✓";
+      }
+
+      .faq {
+        padding: 72px 0;
+      }
+
+      .faq-list {
+        display: grid;
+        gap: 12px;
+      }
+
+      details {
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: var(--white);
+        transition: border-color 180ms ease, box-shadow 180ms ease;
+      }
+
+      details[open] {
+        border-color: rgba(0, 155, 125, 0.55);
+        box-shadow: 0 12px 30px rgba(16, 47, 53, 0.08);
+      }
+
+      summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 20px 18px;
+        cursor: pointer;
+        font-weight: 750;
+        letter-spacing: -0.04em;
+        line-height: 1.45;
+        list-style: none;
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      summary::after {
+        display: grid;
+        flex: 0 0 auto;
+        width: 26px;
+        height: 26px;
+        place-items: center;
+        border-radius: 50%;
+        background: #e6f5f1;
+        color: var(--mint-deep);
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1;
+        content: "+";
+      }
+
+      details[open] summary::after {
+        content: "−";
+      }
+
+      .answer {
+        margin: 0;
+        padding: 0 18px 21px;
+        color: var(--ink-soft);
+        font-size: 0.98rem;
+      }
+
+      .proof {
+        padding: 58px 0 68px;
+        background: var(--ink);
+        color: var(--white);
+      }
+
+      .proof .section-kicker {
+        color: var(--sun);
+      }
+
+      .proof-card {
+        display: grid;
+        gap: 18px;
+        padding: 26px 24px;
+        border: 1px dashed rgba(255, 255, 255, 0.52);
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      .proof-card h2 {
+        margin-bottom: 0;
+        font-size: clamp(1.75rem, 5vw, 2.75rem);
+        letter-spacing: -0.06em;
+        line-height: 1.2;
+      }
+
+      .placeholder {
+        display: inline-flex;
+        width: fit-content;
+        padding: 10px 13px;
+        border-radius: 8px;
+        background: var(--sun);
+        color: var(--ink);
+        font-weight: 800;
+      }
+
+      .cta-area {
+        padding: 64px 0 36px;
+        text-align: center;
+      }
+
+      .cta-area h2 {
+        margin-bottom: 13px;
+        font-size: clamp(1.8rem, 5.5vw, 3.05rem);
+        font-weight: 800;
+        letter-spacing: -0.065em;
+        line-height: 1.25;
+      }
+
+      .cta-area p {
+        max-width: 530px;
+        margin: 0 auto 24px;
+        color: var(--ink-soft);
+      }
+
+      .cta-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 172px;
+        min-height: 54px;
+        padding: 14px 24px;
+        border-radius: 999px;
+        background: var(--coral);
+        color: var(--white);
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        text-decoration: none;
+        box-shadow: 0 11px 24px rgba(240, 111, 91, 0.26);
+        transition: transform 180ms ease, box-shadow 180ms ease;
+      }
+
+      .cta-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 15px 28px rgba(240, 111, 91, 0.34);
+      }
+
+      .cta-button:focus-visible,
+      summary:focus-visible {
+        outline: 3px solid var(--sun);
+        outline-offset: 3px;
+      }
+
+      footer {
+        padding: 25px 0 31px;
+        color: #668087;
+        font-size: 0.82rem;
+        text-align: center;
+      }
+
+      @media (min-width: 760px) {
+        .wrap {
+          width: min(100% - 80px, 1120px);
+        }
+
+        .hero {
+          padding-bottom: 100px;
+        }
+
+        .hero-grid {
+          grid-template-columns: minmax(0, 1.75fr) minmax(245px, 0.7fr);
+          align-items: end;
+          gap: 22px;
+        }
+
+        .hero-copy {
+          min-height: 520px;
+          padding: 68px 58px 54px;
+          border-radius: 34px;
+        }
+
+        .hero-note {
+          margin-bottom: 28px;
+          padding: 27px;
+          border-radius: 24px;
+        }
+
+        .for-you,
+        .faq {
+          padding: 112px 0;
+        }
+
+        .person-card {
+          grid-template-columns: minmax(290px, 0.9fr) minmax(350px, 1.1fr);
+          align-items: center;
+          gap: 50px;
+          padding: 42px;
+          border-radius: 30px;
+        }
+
+        .person-card::after {
+          right: 33px;
+          bottom: -42px;
+          font-size: 15rem;
+        }
+
+        .proof {
+          padding: 90px 0;
+        }
+
+        .proof-card {
+          grid-template-columns: 1fr auto;
+          align-items: center;
+          padding: 42px;
+          border-radius: 28px;
+        }
+
+        .cta-area {
+          padding: 94px 0 50px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="wrap site-header">
+        <div class="brand" aria-label="내 몸에 맞는 건강관리">
+          <span class="brand-mark" aria-hidden="true">●</span>
+          내 몸에 맞는 건강관리
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="headline">
+          <div class="wrap hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">40~50대 여성을 위한 건강관리</p>
+              <h1 id="headline">
+                검진은 괜찮다는데,<br />
+                왜 저는 <strong>계속 힘들까요?</strong>
+              </h1>
+              <p class="hero-intro">
+                피로, 식후 불편, 체중 변화까지. 내 몸의 반응을 살피며 먹는 것부터
+                생활습관까지 나에게 맞는 방법을 함께 찾아갑니다.
+              </p>
+              <ul class="signal-list" aria-label="고민 영역">
+                <li>쉬어도 풀리지 않는 피로</li>
+                <li>식후 더부룩함</li>
+                <li>예전 같지 않은 체중</li>
+              </ul>
+            </div>
+
+            <aside class="hero-note" aria-label="고객의 고민">
+              <p class="mini-label">이런 마음, 낯설지 않나요?</p>
+              <p>“뭘 먹고 어떻게 살아야 할지, 이제는 내 몸 기준으로 알고 싶어요.”</p>
+            </aside>
+          </div>
+        </section>
+
+        <section class="for-you" aria-labelledby="for-you-title">
+          <div class="wrap">
+            <div class="section-heading">
+              <p class="section-kicker">FOR YOU</p>
+              <h2 id="for-you-title">이런 분께</h2>
+            </div>
+
+            <div class="person-card">
+              <p>
+                갱년기 전후, 예전과 달라진 몸을 느끼지만 무리한 방법 말고 오래 갈
+                건강관리를 찾는 52세 여성입니다.
+              </p>
+              <ul class="check-list">
+                <li>예전과 비슷하게 먹고 움직여도 체중이 잘 줄지 않아요.</li>
+                <li>잠을 자도 개운하지 않고 피로가 쉽게 쌓여요.</li>
+                <li>식사 후 속이 더부룩해 무엇을 먹어야 할지 혼란스러워요.</li>
+                <li>단기 다이어트와 포기를 반복하고 싶지 않아요.</li>
+                <li>엄격한 식단이나 힘든 운동은 오래 하기 어렵다고 느껴요.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq" aria-labelledby="faq-title">
+          <div class="wrap">
+            <div class="section-heading">
+              <p class="section-kicker">FAQ</p>
+              <h2 id="faq-title">많이 묻는 질문</h2>
+              <p>몸을 억지로 바꾸기보다, 지금의 생활을 이해하는 것부터 시작합니다.</p>
+            </div>
+
+            <div class="faq-list">
+              <details open>
+                <summary>건강검진은 정상인데 계속 피곤할 때 뭘 해야 하나요</summary>
+                <p class="answer">
+                  먼저 생활 리듬을 살펴보는 것부터 시작해 보세요.<br />
+                  식사 시간, 수면, 활동량을 한꺼번에 바꾸지 말고 내 패턴을 기록해 보세요.<br />
+                  불편이 계속되거나 심해지면 의료진과 다시 상담하는 것이 좋습니다.
+                </p>
+              </details>
+
+              <details>
+                <summary>갱년기 전후 살이 잘 안 빠지는 이유</summary>
+                <p class="answer">
+                  체중만 급하게 줄이기보다 몸의 변화에 맞춰 생활을 조정하는 게 먼저입니다.<br />
+                  지속할 수 있는 식사 리듬과 가벼운 움직임부터 내 일상에 맞게 찾아보세요.<br />
+                  내 몸의 반응을 보며 천천히 조정하는 관리가 더 오래 갑니다.
+                </p>
+              </details>
+
+              <details>
+                <summary>50대 배가 자주 더부룩할 때 식단 관리 방법</summary>
+                <p class="answer">
+                  더부룩함이 있다고 무조건 굶기보다 내 식사 패턴을 먼저 살펴보세요.<br />
+                  먹은 음식, 식사 시간, 먹는 속도와 불편했던 때를 간단히 기록해 보세요.<br />
+                  증상이 오래가거나 심해지면 의료진과 상담해야 합니다.
+                </p>
+              </details>
+
+              <details>
+                <summary>50대 다이어트는 식단이 먼저인가요 운동이 먼저인가요</summary>
+                <p class="answer">
+                  먼저 내 생활에서 가장 쉽게 바꿀 한 가지를 정하는 게 좋습니다.<br />
+                  식사 시간과 내용을 정리하고 가벼운 움직임을 더하는 방식이 부담이 적습니다.<br />
+                  무리한 목표보다 꾸준히 할 수 있는 방식이 더 중요합니다.
+                </p>
+              </details>
+
+              <details>
+                <summary>갱년기 전후 식단 관리는 어디서 상담받아야 하나요</summary>
+                <p class="answer">
+                  내 이야기를 듣고 일상에서 할 수 있는 방법을 함께 정리해 주는 곳이 좋습니다.<br />
+                  굶기나 단기 감량만을 앞세우기보다 수면·식사·활동을 함께 살피는지 확인하세요.<br />
+                  상담 방식과 비용이 투명하게 안내되는지도 꼭 살펴보세요.
+                </p>
+              </details>
+            </div>
+          </div>
+        </section>
+
+        <section class="proof" aria-labelledby="proof-title">
+          <div class="wrap">
+            <div class="proof-card">
+              <div>
+                <p class="section-kicker">TRUST</p>
+                <h2 id="proof-title">말보다 근거가 필요하니까요</h2>
+              </div>
+              <span class="placeholder">[근거 채우기]</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta-area" aria-labelledby="cta-title">
+          <div class="wrap">
+            <h2 id="cta-title">내 몸을 이해하는<br />작은 시작을 해보세요.</h2>
+            <p>지금의 식사와 생활을 돌아보고, 나에게 맞는 관리의 방향을 찾아봅니다.</p>
+            <a class="cta-button" href="#">상담 신청</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="wrap">
+        개인의 증상이나 상태에 따라 의료기관의 진료가 필요할 수 있습니다.
+      </footer>
+    </div>
+  </body>
+</html>

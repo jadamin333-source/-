@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#E7EEF2"/>
+  <rect x="110" y="150" width="860" height="900" rx="40" fill="#17324D"/>
+  <circle cx="820" cy="300" r="100" fill="#D9E3D0" opacity=".9"/>
+  <circle cx="860" cy="340" r="22" fill="#D47D5A"/>
+  <text x="170" y="330" fill="#FFFDF8" font-family="Pretendard, Arial, sans-serif" font-size="62" font-weight="800">짧게 판단하지 않고</text>
+  <text x="170" y="430" fill="#E6B18B" font-family="Pretendard, Arial, sans-serif" font-size="62" font-weight="800">꾸준히 살펴보기</text>
+  <line x1="170" y1="510" x2="900" y2="510" stroke="#6D8796" stroke-width="3"/>
+  <text x="170" y="630" fill="#FFFDF8" font-family="Pretendard, Arial, sans-serif" font-size="40">체중만 보지 말고</text>
+  <text x="170" y="710" fill="#FFFDF8" font-family="Pretendard, Arial, sans-serif" font-size="40">부종, 피로감, 아침의 가벼움도</text>
+  <text x="170" y="790" fill="#FFFDF8" font-family="Pretendard, Arial, sans-serif" font-size="40">함께 기록해보세요.</text>
+  <text x="170" y="940" fill="#D9E3D0" font-family="Pretendard, Arial, sans-serif" font-size="36">내가 몇 주, 몇 달 동안</text>
+  <text x="170" y="995" fill="#D9E3D0" font-family="Pretendard, Arial, sans-serif" font-size="36">지킬 수 있는 방법인지가 중요합니다.</text>
+  <text x="110" y="1240" fill="#17324D" font-family="Pretendard, Arial, sans-serif" font-size="30" font-weight="700">04 / 05</text>
+</svg>
