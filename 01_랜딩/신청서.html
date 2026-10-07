@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="내 몸에 맞는 건강관리 상담 신청서" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/wanted-sans@1.0.3/fonts/webfonts/variable/split/WantedSansVariable.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css"
+      rel="stylesheet"
+    />
+    <title>상담 신청 | 내 몸에 맞는 건강관리</title>
+    <style>
+      :root {
+        --ink: oklch(0.148 0.004 277);
+        --ink-soft: oklch(0.298 0.01 273 / 0.68);
+        --paper: oklch(0.972 0.002 286);
+        --white: oklch(1 0 0);
+        --line: oklch(0.521 0.018 273 / 0.22);
+        --brand: #0066ff;
+        --brand-subtle: oklch(0.954 0.022 250);
+        --font: "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font-family: var(--font);
+        line-height: 1.7;
+        word-break: keep-all;
+      }
+      .wrap { width: min(100% - 40px, 760px); margin: 0 auto; }
+      .site-header {
+        display: flex;
+        align-items: center;
+        min-height: 72px;
+        border-bottom: 1px solid var(--line);
+        background: var(--white);
+      }
+      .brand { color: var(--ink); font-size: 20px; font-weight: 700; text-decoration: none; }
+      .brand-mark { color: var(--brand); margin-right: 8px; }
+      main { padding: 72px 0 96px; }
+      .eyebrow { margin: 0 0 16px; color: var(--brand); font-size: 14px; font-weight: 700; letter-spacing: .04em; }
+      h1 { margin: 0 0 20px; font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.25; letter-spacing: -.04em; }
+      .intro { margin: 0 0 40px; color: var(--ink-soft); }
+      .form-card { padding: clamp(24px, 5vw, 48px); border: 1px solid var(--line); border-radius: 16px; background: var(--white); }
+      .field { margin-bottom: 24px; }
+      label { display: block; margin-bottom: 8px; font-weight: 700; }
+      input, textarea, select {
+        width: 100%;
+        padding: 13px 14px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        color: var(--ink);
+        background: var(--white);
+        font: inherit;
+      }
+      textarea { min-height: 140px; resize: vertical; }
+      input:focus, textarea:focus, select:focus { outline: 3px solid var(--brand-subtle); border-color: var(--brand); }
+      .hint { margin: 8px 0 0; color: var(--ink-soft); font-size: 14px; }
+      .consent { display: flex; gap: 10px; align-items: flex-start; margin: 28px 0; color: var(--ink-soft); font-size: 14px; }
+      .consent input { width: auto; margin-top: 6px; }
+      button {
+        width: 100%;
+        padding: 14px 20px;
+        border: 1px solid var(--brand);
+        border-radius: 8px;
+        background: var(--brand);
+        color: #fff;
+        font: inherit;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      button:hover { filter: brightness(.94); }
+      .back { display: inline-block; margin-top: 24px; color: var(--ink-soft); text-decoration: none; }
+      footer { padding-bottom: 40px; color: var(--ink-soft); font-size: 13px; }
+      .success { display: none; margin-top: 24px; padding: 16px; border-radius: 8px; background: var(--brand-subtle); color: var(--ink); }
+      .success.is-visible { display: block; }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">●</span>내 몸에 맞는 건강관리</a>
+      </div>
+    </header>
+    <main>
+      <div class="wrap">
+        <p class="eyebrow">CONSULTATION</p>
+        <h1>내 몸에 맞는 상담을<br />신청해 보세요.</h1>
+        <p class="intro">현재의 식사와 생활습관을 바탕으로, 무리 없이 이어갈 수 있는 관리 방향을 함께 정리합니다.</p>
+        <form class="form-card" id="consultation-form">
+          <div class="field">
+            <label for="name">이름</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="phone">연락처</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="010-0000-0000" required />
+          </div>
+          <div class="field">
+            <label for="focus">상담에서 가장 궁금한 점</label>
+            <select id="focus" name="focus" required>
+              <option value="">선택해 주세요</option>
+              <option>갱년기 전후 체중 관리</option>
+              <option>식사 습관과 간식</option>
+              <option>수면과 생활 리듬</option>
+              <option>운동과 일상 활동</option>
+              <option>기타</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">현재 고민을 조금 더 알려주세요</label>
+            <textarea id="message" name="message" placeholder="예: 최근 잠이 자주 깨고 저녁에 간식을 많이 먹게 됩니다."></textarea>
+            <p class="hint">정확한 진단이 필요한 증상은 의료기관 진료를 먼저 권합니다.</p>
+          </div>
+          <label class="consent"><input type="checkbox" required /> 상담 신청을 위해 입력한 연락처를 상담 안내 목적으로 사용하는 데 동의합니다.</label>
+          <button type="submit">상담 신청 내용 확인</button>
+          <div class="success" id="success" role="status">신청 내용이 확인되었습니다. 접수 채널이 연결되면 제출 기능을 활성화할 수 있습니다.</div>
+        </form>
+        <a class="back" href="index.html">← 랜딩페이지로 돌아가기</a>
+      </div>
+    </main>
+    <footer class="wrap">개인의 증상이나 상태에 따라 의료기관의 진료가 필요할 수 있습니다.</footer>
+    <script>
+      document.querySelector("#consultation-form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        document.querySelector("#success").classList.add("is-visible");
+      });
+    </script>
+  </body>
+</html>
